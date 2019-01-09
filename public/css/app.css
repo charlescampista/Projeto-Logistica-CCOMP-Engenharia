@@ -1,0 +1,153 @@
+html {
+}
+body {
+    background: #F0F0F0;
+}
+
+
+.navbar {
+    height: 55px !important;
+    margin-bottom: 4px;
+}
+
+.sidebar {
+    height: 100%;
+    width: 220px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+.sidebar ul li {
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.sidebar ul li a {
+    width: 250px;
+    height: 100%;
+    display: block;
+    padding: 12px;
+    color: whitesmoke;
+}
+.sidebar ul li a, .sidebar ul li a:visited, .sidebar ul li a:hover, .sidebar ul li a:active {
+    text-decoration:none !important;
+}
+.sidebar ul li a:hover {
+    color: white;
+}
+
+.navbar {
+    border-bottom: 1px solid rgba(0,0,0,0.25);
+}
+
+.sidebar-header {
+    background: rgba(0,0,0,0.1);
+    width: 220px;
+    height: 55px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-bottom: 1px solid rgba(0,0,0,0.25);
+}
+
+.sidebar-brand {
+    display: inline-block;
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+    white-space: nowrap;
+    line-height: inherit;
+    width: 100%;
+    text-align: center;
+    font-size: 1.25rem;
+    color: whitesmoke !important;
+}
+.sidebar-brand:hover, .sidebar-brand:active, .sidebar-brand:visited, .sidebar-brand:link {
+    text-decoration: none;
+}
+
+.page-content {
+    margin-left: 220px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    overflow-y: auto;
+}
+
+button:focus,button:active {
+    outline: none !important;
+}
+
+.col-md .card {
+    margin-bottom: 4px;
+}
+
+.navbar-toggler {
+    border: none;
+    padding: 0px;
+    margin: 0;
+    display: none;
+}
+
+.hamburger-box {
+    margin-top: 8px;
+}
+
+.card {
+    margin-bottom: 2px;
+}
+
+*::-webkit-input-placeholder{
+    color: #A0A0A0 !important;
+    font-weight: 400;
+    text-decoration: green underline;
+    text-decoration-style: dotted;
+}
+
+::-moz-placeholder {
+    color: #A0A0A0 !important;
+    font-weight: 400;
+    text-decoration: green underline;
+    text-decoration-style: dotted;
+}
+
+/* Media Specific */
+@media (max-width: 768px) {
+
+    .navbar-toggler {
+        display: block;
+    }
+
+    .page-content {
+        width: 100%;
+        margin-left: 0;
+        transition: margin-left 0.5s;
+    }
+
+    .sidebar {
+        width: 0;
+        transition: width 0.5s;
+    }
+
+    .navbar-header {
+        margin-left: 50px !important;
+    }
+}
+
+@media (min-width: 769px) {
+    .page-content {
+        right: 0;
+    }
+
+}
+
+
